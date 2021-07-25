@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # own apps
     'products',
+    'adminlte_testing',
 
     # third party apps
 ]
