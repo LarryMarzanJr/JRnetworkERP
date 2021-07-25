@@ -8,5 +8,9 @@
      <p>{{ instance.id }} - <a href='{{ instance.get_absolute_url }}'>{{ instance.title }}</a></p>
 {% endfor %}
 
+<form action="create/" method="POST">
+     {% csrf_token %}
+     <button type="submit">Buat Produk Baru</button>
+</form>
 
 {% endblock %}
