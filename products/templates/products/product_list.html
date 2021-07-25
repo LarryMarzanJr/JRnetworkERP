@@ -9,8 +9,10 @@
 {% endfor %}
 
 <form action="create/" method="POST">
-     {% csrf_token %}
-     <button type="submit">Buat Produk Baru</button>
+     <div class="submit-row">
+          {% csrf_token %}
+          <button type="submit">Buat Produk Baru</button>
+     </div>
 </form>
 
 {% endblock %}
